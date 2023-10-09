@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:paddingHorizontal="18dp"
+    android:paddingVertical="16dp"
+    android:background="@drawable/vw_bg_outline">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:paddingEnd="10dp"
+        android:scaleType="fitCenter"
+        android:src="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        app:layout_constraintEnd_toEndOf="@+id/iv_image"
+        app:layout_constraintStart_toStartOf="@+id/iv_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_image" />
+
+    <TextView
+        android:id="@+id/tv_mv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/movie_title"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_image" />
+
+    <TextView
+        android:id="@+id/tv_mv_genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/movie_title"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mv_title" />
+
+    <RatingBar
+        android:id="@+id/rb_mv_rate"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mv_genre" />
+
+    <TextView
+        android:id="@+id/tv_mv_rate_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_title"
+        android:textColor="@color/white"
+        android:layout_marginStart="6dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_mv_rate"
+        app:layout_constraintStart_toEndOf="@+id/rb_mv_rate"
+        app:layout_constraintTop_toTopOf="@+id/rb_mv_rate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

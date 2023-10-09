@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MMV</string>
+    <string name="category">Kategori</string>
+    <string name="popular">Popular</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="top_rated">Rating Tertinggi</string>
+    <string name="up_coming">Akan Datang</string>
+    <string name="movie_category">Kategori Movie</string>
+</resources>
